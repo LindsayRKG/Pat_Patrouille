@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Groupe - Git & GitHub Mastery</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🚀</span>
+                <span class="logo-text">DevTeam</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                <li><a href="#projet" class="nav-link">Projet</a></li>
+                <li><a href="#equipe" class="nav-link">Équipe</a></li>
+                <li><a href="#competences" class="nav-link">Compétences</a></li>
+                <li><a href="#resultats" class="nav-link">Résultats</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Maîtrise de Git & GitHub</h1>
+            <p class="hero-subtitle">Un projet collaboratif révolutionnaire</p>
+            <p class="hero-description">Découvrez comment notre équipe de 5 développeurs a maîtrisé les commandes Git et la collaboration en ligne</p>
+            <button class="cta-button" onclick="scrollToSection('projet')">Découvrir le Projet</button>
+        </div>
+        <div class="hero-animation">
+            <div class="floating-box">
+                <span class="icon">📚</span>
+            </div>
+            <div class="floating-box" style="animation-delay: 0.5s;">
+                <span class="icon">💻</span>
+            </div>
+            <div class="floating-box" style="animation-delay: 1s;">
+                <span class="icon">🔧</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projet Section -->
+    <section id="projet" class="projet">
+        <div class="container">
+            <h2 class="section-title">Notre Projet</h2>
+            <p class="section-subtitle">Une expérience complète de collaboration Git</p>
+
+            <div class="projet-grid">
+                <div class="projet-card">
+                    <div class="card-icon">1️⃣</div>
+                    <h3>Code Simple et Basique</h3>
+                    <p>Création d'un code simple avec modèle d'intelligence artificielle pour vérifier et analyser le contenu du code.</p>
+                </div>
+
+                <div class="projet-card">
+                    <div class="card-icon">2️⃣</div>
+                    <h3>Installation Git & GitHub</h3>
+                    <p>Configuration complète de Git et GitHub, création de compte et initialisation avec la commande git config.</p>
+                </div>
+
+                <div class="projet-card">
+                    <div class="card-icon">3️⃣</div>
+                    <h3>50 Commandes Git</h3>
+                    <p>Apprentissage et utilisation de 50 commandes Git différentes avec captures d'écran comme preuve.</p>
+                </div>
+
+                <div class="projet-card">
+                    <div class="card-icon">4️⃣</div>
+                    <h3>Travail en Groupe</h3>
+                    <p>Collaboration sur GitHub avec 7 fichiers différents, branches individuelles et 3 commits minimum par membre.</p>
+                </div>
+
+                <div class="projet-card">
+                    <div class="card-icon">🎁</div>
+                    <h3>Bonus: Fusion des Branches</h3>
+                    <p>Fusion de toutes les branches sur la branche principale, gestion et résolution des conflits Git.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Équipe Section -->
+    <section id="equipe" class="equipe">
+        <div class="container">
+            <h2 class="section-title">Notre Équipe</h2>
+            <p class="section-subtitle">5 Développeurs Talentueux</p>
+
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar">A</div>
+                    <h3>Ateba</h3>
+                    <p class="role">Développeur Full-Stack</p>
+                    <p class="description">Expert en gestion de branches et résolution de conflits</p>
+                    <div class="team-skills">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Merge</span>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-avatar">As</div>
+                    <h3>Asta</h3>
+                    <p class="role">Développeur Backend</p>
+                    <p class="description">Spécialiste des commandes Git avancées</p>
+                    <div class="team-skills">
+                        <span class="skill-tag">Rebase</span>
+                        <span class="skill-tag">Stash</span>
+                        <span class="skill-tag">Cherry-pick</span>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-avatar">S</div>
+                    <h3>Shine</h3>
+                    <p class="role">Développeur Frontend</p>
+                    <p class="description">Maître de la collaboration en équipe</p>
+                    <div class="team-skills">
+                        <span class="skill-tag">Pull Request</span>
+                        <span class="skill-tag">Code Review</span>
+                        <span class="skill-tag">Collaboration</span>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-avatar">L</div>
+                    <h3>Lili</h3>
+                    <p class="role">Développeur DevOps</p>
+                    <p class="description">Gestionnaire de dépôts et workflows</p>
+                    <div class="team-skills">
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Workflow</span>
+                        <span class="skill-tag">Automation</span>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-avatar">I</div>
+                    <h3>Idou</h3>
+                    <p class="role">Développeur QA</p>
+                    <p class="description">Testeur et validateur de code</p>
+                    <div class="team-skills">
+                        <span class="skill-tag">Testing</span>
+                        <span class="skill-tag">Validation</span>
+                        <span class="skill-tag">Documentation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compétences Section -->
+    <section id="competences" class="competences">
+        <div class="container">
+            <h2 class="section-title">Compétences Acquises</h2>
+            <p class="section-subtitle">Maîtrise complète de Git et GitHub</p>
+
+            <div class="skills-container">
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <h3>Git Basics</h3>
+                        <span class="skill-percentage">100%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 100%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <h3>Commandes Git Avancées</h3>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 95%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <h3>Collaboration GitHub</h3>
+                        <span class="skill-percentage">98%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 98%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <h3>Gestion des Conflits</h3>
+                        <span class="skill-percentage">92%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 92%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <h3>Workflow Git</h3>
+                        <span class="skill-percentage">96%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 96%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <h3>Code Review & PR</h3>
+                        <span class="skill-percentage">94%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 94%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Résultats Section -->
+    <section id="resultats" class="resultats">
+        <div class="container">
+            <h2 class="section-title">Résultats & Statistiques</h2>
+            <p class="section-subtitle">Les chiffres de notre succès</p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Commandes Git</div>
+                    <p class="stat-description">Maîtrisées et documentées</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Développeurs</div>
+                    <p class="stat-description">Collaborateurs actifs</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">7+</div>
+                    <div class="stat-label">Fichiers</div>
+                    <p class="stat-description">Dans le dépôt</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Commits</div>
+                    <p class="stat-description">Par membre minimum</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Branches</div>
+                    <p class="stat-description">Créées et fusionnées</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Réussite</div>
+                    <p class="stat-description">Projet complété</p>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <h3 class="timeline-title">Chronologie du Projet</h3>
+                <div class="timeline-items">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Phase 1: Fondamentaux</h4>
+                            <p>Installation et configuration de Git & GitHub</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Phase 2: Apprentissage</h4>
+                            <p>Maîtrise des 50 commandes Git essentielles</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Phase 3: Collaboration</h4>
+                            <p>Travail en groupe avec branches individuelles</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Phase 4: Intégration</h4>
+                            <p>Fusion des branches et résolution des conflits</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Succès Final</h4>
+                            <p>Projet complété avec excellence</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Nous Contacter</h2>
+            <p class="section-subtitle">Restez connecté avec notre équipe</p>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <span class="info-icon">📧</span>
+                        <div>
+                            <h4>Email</h4>
+                            <p>equipe@devteam.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-icon">🔗</span>
+                        <div>
+                            <h4>GitHub</h4>
+                            <p>github.com/devteam-groupe</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-icon">💬</span>
+                        <div>
+                            <h4>Discord</h4>
+                            <p>DevTeam Community</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Votre nom" required>
+                    <input type="email" placeholder="Votre email" required>
+                    <textarea placeholder="Votre message" rows="5" required></textarea>
+                    <button type="submit" class="submit-btn">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 DevTeam Portfolio. Créé par Ateba, Asta, Shine, Lili et Idou.</p>
+            <div class="footer-links">
+                <a href="#accueil">Accueil</a>
+                <a href="#projet">Projet</a>
+                <a href="#equipe">Équipe</a>
+                <a href="#competences">Compétences</a>
+                <a href="#resultats">Résultats</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/interactions.js"></script>
+</body>
+</html>
+

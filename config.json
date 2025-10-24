@@ -1,0 +1,164 @@
+{
+  "portfolio": {
+    "title": "Portfolio Groupe - Git & GitHub Mastery",
+    "description": "Un projet collaboratif révolutionnaire présentant la maîtrise de Git et GitHub",
+    "version": "1.0.0",
+    "author": "DevTeam",
+    "year": 2025
+  },
+  "team": {
+    "members": [
+      {
+        "id": 1,
+        "name": "Ateba",
+        "role": "Développeur Full-Stack",
+        "description": "Expert en gestion de branches et résolution de conflits",
+        "skills": ["Git", "GitHub", "Merge"],
+        "avatar": "A"
+      },
+      {
+        "id": 2,
+        "name": "Asta",
+        "role": "Développeur Backend",
+        "description": "Spécialiste des commandes Git avancées",
+        "skills": ["Rebase", "Stash", "Cherry-pick"],
+        "avatar": "As"
+      },
+      {
+        "id": 3,
+        "name": "Shine",
+        "role": "Développeur Frontend",
+        "description": "Maître de la collaboration en équipe",
+        "skills": ["Pull Request", "Code Review", "Collaboration"],
+        "avatar": "S"
+      },
+      {
+        "id": 4,
+        "name": "Lili",
+        "role": "Développeur DevOps",
+        "description": "Gestionnaire de dépôts et workflows",
+        "skills": ["CI/CD", "Workflow", "Automation"],
+        "avatar": "L"
+      },
+      {
+        "id": 5,
+        "name": "Idou",
+        "role": "Développeur QA",
+        "description": "Testeur et validateur de code",
+        "skills": ["Testing", "Validation", "Documentation"],
+        "avatar": "I"
+      }
+    ]
+  },
+  "project": {
+    "phases": [
+      {
+        "number": 1,
+        "title": "Code Simple et Basique",
+        "description": "Création d'un code simple avec modèle d'intelligence artificielle pour vérifier et analyser le contenu du code.",
+        "icon": "1️⃣"
+      },
+      {
+        "number": 2,
+        "title": "Installation Git & GitHub",
+        "description": "Configuration complète de Git et GitHub, création de compte et initialisation avec la commande git config.",
+        "icon": "2️⃣"
+      },
+      {
+        "number": 3,
+        "title": "50 Commandes Git",
+        "description": "Apprentissage et utilisation de 50 commandes Git différentes avec captures d'écran comme preuve.",
+        "icon": "3️⃣"
+      },
+      {
+        "number": 4,
+        "title": "Travail en Groupe",
+        "description": "Collaboration sur GitHub avec 7 fichiers différents, branches individuelles et 3 commits minimum par membre.",
+        "icon": "4️⃣"
+      },
+      {
+        "number": 5,
+        "title": "Bonus: Fusion des Branches",
+        "description": "Fusion de toutes les branches sur la branche principale, gestion et résolution des conflits Git.",
+        "icon": "🎁"
+      }
+    ]
+  },
+  "skills": [
+    {
+      "name": "Git Basics",
+      "percentage": 100
+    },
+    {
+      "name": "Commandes Git Avancées",
+      "percentage": 95
+    },
+    {
+      "name": "Collaboration GitHub",
+      "percentage": 98
+    },
+    {
+      "name": "Gestion des Conflits",
+      "percentage": 92
+    },
+    {
+      "name": "Workflow Git",
+      "percentage": 96
+    },
+    {
+      "name": "Code Review & PR",
+      "percentage": 94
+    }
+  ],
+  "statistics": {
+    "commands": 50,
+    "developers": 5,
+    "files": 7,
+    "commits": 15,
+    "branches": 5,
+    "success": 100
+  },
+  "timeline": [
+    {
+      "phase": "Phase 1: Fondamentaux",
+      "description": "Installation et configuration de Git & GitHub"
+    },
+    {
+      "phase": "Phase 2: Apprentissage",
+      "description": "Maîtrise des 50 commandes Git essentielles"
+    },
+    {
+      "phase": "Phase 3: Collaboration",
+      "description": "Travail en groupe avec branches individuelles"
+    },
+    {
+      "phase": "Phase 4: Intégration",
+      "description": "Fusion des branches et résolution des conflits"
+    },
+    {
+      "phase": "Succès Final",
+      "description": "Projet complété avec excellence"
+    }
+  ],
+  "contact": {
+    "email": "equipe@devteam.com",
+    "github": "github.com/devteam-groupe",
+    "discord": "DevTeam Community"
+  },
+  "colors": {
+    "primary": "#6366f1",
+    "secondary": "#8b5cf6",
+    "accent": "#ec4899",
+    "success": "#10b981",
+    "warning": "#f59e0b",
+    "error": "#ef4444",
+    "darkBg": "#0f172a",
+    "lightBg": "#f8fafc"
+  },
+  "animations": {
+    "enabled": true,
+    "duration": "0.3s",
+    "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+  }
+}
+

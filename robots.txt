@@ -1,0 +1,21 @@
+# Robots.txt pour Portfolio Groupe
+
+# Autoriser tous les robots
+User-agent: *
+Allow: /
+
+# Directives spécifiques
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /config/
+
+# Sitemap
+Sitemap: https://portfolio-groupe.dev/sitemap.xml
+
+# Délai de crawl
+Crawl-delay: 1
+
+# Commentaire
+# Ce fichier contrôle l'accès des robots aux pages du portfolio
+
