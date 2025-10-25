@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Mettre à jour le lien actif lors du scroll
+    // Mettre à jour le lien actif lors du scrolll
     window.addEventListener('scroll', function() {
         let current = '';
         const sections = document.querySelectorAll('section');

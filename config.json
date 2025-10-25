@@ -3,50 +3,50 @@
     "title": "Portfolio Groupe - Git & GitHub Mastery",
     "description": "Un projet collaboratif révolutionnaire présentant la maîtrise de Git et GitHub",
     "version": "1.0.0",
-    "author": "DevTeam",
+    "author": "Pat'patrouille",
     "year": 2025
   },
   "team": {
     "members": [
       {
         "id": 1,
-        "name": "Ateba",
+        "name": "Marcus",
         "role": "Développeur Full-Stack",
         "description": "Expert en gestion de branches et résolution de conflits",
         "skills": ["Git", "GitHub", "Merge"],
-        "avatar": "A"
+        "avatar": "M"
       },
       {
         "id": 2,
-        "name": "Asta",
+        "name": "Ruben",
         "role": "Développeur Backend",
         "description": "Spécialiste des commandes Git avancées",
         "skills": ["Rebase", "Stash", "Cherry-pick"],
-        "avatar": "As"
+        "avatar": "R"
       },
       {
         "id": 3,
-        "name": "Shine",
+        "name": "Rocky",
         "role": "Développeur Frontend",
         "description": "Maître de la collaboration en équipe",
         "skills": ["Pull Request", "Code Review", "Collaboration"],
-        "avatar": "S"
+        "avatar": "R"
       },
       {
         "id": 4,
-        "name": "Lili",
+        "name": "Zuma",
         "role": "Développeur DevOps",
         "description": "Gestionnaire de dépôts et workflows",
         "skills": ["CI/CD", "Workflow", "Automation"],
-        "avatar": "L"
+        "avatar": "Z"
       },
       {
         "id": 5,
-        "name": "Idou",
+        "name": "Stella",
         "role": "Développeur QA",
         "description": "Testeur et validateur de code",
         "skills": ["Testing", "Validation", "Documentation"],
-        "avatar": "I"
+        "avatar": "S"
       }
     ]
   },
