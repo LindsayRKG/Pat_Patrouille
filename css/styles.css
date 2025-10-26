@@ -3,17 +3,17 @@
    ============================================ */
 
 :root {
-    --primary-color: #6366f1;
-    --secondary-color: #8b5cf6;
-    --accent-color: #ec4899;
-    --dark-bg: #0f172a;
-    --light-bg: #f8fafc;
-    --text-dark: #1e293b;
-    --text-light: #64748b;
-    --border-color: #e2e8f0;
-    --success-color: #10b981;
-    --warning-color: #f59e0b;
-    --error-color: #ef4444;
+    --primary-color: #2563eb;
+    --secondary-color: #059669;
+    --accent-color: #dc2626;
+    --dark-bg: #111827;
+    --light-bg: #f9fafb;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --border-color: #d1d5db;
+    --success-color: #059669;
+    --warning-color: #d97706;
+    --error-color: #dc2626;
     
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -152,7 +152,7 @@ body {
 .hero {
     margin-top: 70px;
     min-height: calc(100vh - 70px);
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #1e3a8a 0%, #065f46 100%);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -288,7 +288,7 @@ section {
    ============================================ */
 
 .projet {
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
 }
 
 .projet-grid {
@@ -347,7 +347,7 @@ section {
 }
 
 .team-card {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #1e40af 0%, #047857 100%);
     padding: 40px 30px;
     border-radius: 15px;
     text-align: center;
@@ -440,7 +440,7 @@ section {
    ============================================ */
 
 .competences {
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
 }
 
 .skills-container {
@@ -541,7 +541,7 @@ section {
 }
 
 .timeline {
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
     padding: 50px 30px;
     border-radius: 15px;
 }
@@ -613,7 +613,7 @@ section {
    ============================================ */
 
 .contact {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #1e3a8a 0%, #065f46 100%);
     color: white;
 }
 
@@ -746,6 +746,36 @@ section {
 }
 
 /* ============================================
+   ANIMATIONS
+   ============================================ */
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes fillProgress {
+    from {
+        width: 0%;
+    }
+}
+
+/* ============================================
    RESPONSIVE DESIGN
    ============================================ */
 
@@ -836,4 +866,3 @@ section {
         gap: 15px;
     }
 }
-
