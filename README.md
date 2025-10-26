@@ -7,11 +7,11 @@ Un portfolio vitrine spectaculaire créé par une équipe de 5 développeurs pou
 
 ## 👥 Équipe
 
-- **Ateba** - Développeur Full-Stack
-- **Asta** - Développeur Backend
-- **Shine** - Développeur Frontend
-- **Lili** - Développeur DevOps
-- **Idou** - Développeur QA
+- **TCHOUNGA MARC ETIENNE** - Développeur Full-Stack
+- **LEUNKEU PAULE ANDREE** - Développeur Backend
+- **MBIANTCHA SONIA** - Développeur Frontend
+- **NZEUNE FLORENTINE** - Développeur DevOps
+- **SANDRA GAELLE** - Développeur QA
 
 ## 🎯 Objectifs du Projet
 
@@ -175,10 +175,10 @@ Ce portfolio est créé à titre éducatif par l'équipe DevTeam.
 
 ---
 
-**Créé avec ❤️ par Ateba, Asta, Shine, Lili et Idou**
+**Créé avec ❤️ par TCHOUNGA MARC, LEUNKEU PAULE, MBIANTCHA SONIA, FLORENTINE et SANDRA GAELLE**
 
 Version: 1.0.0
-Dernière mise à jour: 2025
+Dernière mise à jour: 26/10/2025
 
 =======
 # Pat_Patrouille
