@@ -1,52 +1,56 @@
-{
+// ============================================
+// CONFIGURATION - PAT_PATROUILLE
+// ============================================
+
+const CONFIG = {
   "portfolio": {
-    "title": "Portfolio Groupe - Git & GitHub Mastery",
-    "description": "Un projet collaboratif révolutionnaire présentant la maîtrise de Git et GitHub",
-    "version": "1.0.0",
-    "author": "DevTeam",
-    "year": 2025
+    "title": "PAT_PATROUILLE - Système de Gestion",
+    "description": "Système avancé de gestion de patrouille et monitoring en temps réel",
+    "version": "1.2.0",
+    "author": "Équipe PAT_PATROUILLE",
+    "year": 2024
   },
   "team": {
     "members": [
       {
         "id": 1,
-        "name": "Ateba",
-        "role": "Développeur Full-Stack",
-        "description": "Expert en gestion de branches et résolution de conflits",
-        "skills": ["Git", "GitHub", "Merge"],
-        "avatar": "A"
+        "name": "Chef de Projet",
+        "role": "Coordinateur Principal",
+        "description": "Gestion des opérations et stratégie globale",
+        "skills": ["Stratégie", "Gestion", "Coordination"],
+        "avatar": "CD"
       },
       {
         "id": 2,
-        "name": "Asta",
-        "role": "Développeur Backend",
-        "description": "Spécialiste des commandes Git avancées",
-        "skills": ["Rebase", "Stash", "Cherry-pick"],
-        "avatar": "As"
+        "name": "Expert Sécurité", 
+        "role": "Dev Cybersécurité",
+        "description": "Sécurisation des données et infrastructures",
+        "skills": ["Sécurité", "Cryptographie", "Audit"],
+        "avatar": "DS"
       },
       {
         "id": 3,
-        "name": "Shine",
-        "role": "Développeur Frontend",
-        "description": "Maître de la collaboration en équipe",
-        "skills": ["Pull Request", "Code Review", "Collaboration"],
-        "avatar": "S"
+        "name": "Dev Frontend",
+        "role": "Interface Utilisateur",
+        "description": "Expérience utilisateur et design responsive",
+        "skills": ["UI/UX", "React", "Mobile"],
+        "avatar": "DF"
       },
       {
         "id": 4,
-        "name": "Lili",
-        "role": "Développeur DevOps",
-        "description": "Gestionnaire de dépôts et workflows",
-        "skills": ["CI/CD", "Workflow", "Automation"],
-        "avatar": "L"
+        "name": "Dev Backend",
+        "role": "Architecture Système", 
+        "description": "Infrastructure serveur et bases de données",
+        "skills": ["API", "Database", "Cloud"],
+        "avatar": "DB"
       },
       {
         "id": 5,
-        "name": "Idou",
-        "role": "Développeur QA",
-        "description": "Testeur et validateur de code",
-        "skills": ["Testing", "Validation", "Documentation"],
-        "avatar": "I"
+        "name": "Quality Assurance",
+        "role": "Tests & Validation",
+        "description": "Contrôle qualité et tests de performance",
+        "skills": ["Tests", "Performance", "Validation"],
+        "avatar": "QA"
       }
     ]
   },
@@ -54,111 +58,202 @@
     "phases": [
       {
         "number": 1,
-        "title": "Code Simple et Basique",
-        "description": "Création d'un code simple avec modèle d'intelligence artificielle pour vérifier et analyser le contenu du code.",
-        "icon": "1️⃣"
+        "title": "Surveillance Temps Réel",
+        "description": "Monitoring avancé avec alertes instantanées et tableau de bord interactif.",
+        "icon": "🎯"
       },
       {
-        "number": 2,
-        "title": "Installation Git & GitHub",
-        "description": "Configuration complète de Git et GitHub, création de compte et initialisation avec la commande git config.",
-        "icon": "2️⃣"
+        "number": 2, 
+        "title": "Interface Mobile",
+        "description": "Application responsive pour le terrain avec synchronisation cloud.",
+        "icon": "📱"
       },
       {
         "number": 3,
-        "title": "50 Commandes Git",
-        "description": "Apprentissage et utilisation de 50 commandes Git différentes avec captures d'écran comme preuve.",
-        "icon": "3️⃣"
+        "title": "Sécurité Renforcée",
+        "description": "Chiffrement des données et authentification multi-facteurs.",
+        "icon": "🔒"
       },
       {
         "number": 4,
-        "title": "Travail en Groupe",
-        "description": "Collaboration sur GitHub avec 7 fichiers différents, branches individuelles et 3 commits minimum par membre.",
-        "icon": "4️⃣"
+        "title": "Analytiques Avancés", 
+        "description": "Rapports détaillés et prédictions basées sur l'IA.",
+        "icon": "📈"
       },
       {
         "number": 5,
-        "title": "Bonus: Fusion des Branches",
-        "description": "Fusion de toutes les branches sur la branche principale, gestion et résolution des conflits Git.",
-        "icon": "🎁"
+        "title": "Intégration API",
+        "description": "Connexion avec les systèmes existants et extensibilité maximale.",
+        "icon": "🔄"
       }
     ]
   },
   "skills": [
     {
-      "name": "Git Basics",
-      "percentage": 100
-    },
-    {
-      "name": "Commandes Git Avancées",
+      "name": "Développement Frontend",
       "percentage": 95
     },
     {
-      "name": "Collaboration GitHub",
-      "percentage": 98
-    },
-    {
-      "name": "Gestion des Conflits",
+      "name": "Architecture Backend", 
       "percentage": 92
     },
     {
-      "name": "Workflow Git",
-      "percentage": 96
+      "name": "Sécurité Informatique",
+      "percentage": 88
     },
     {
-      "name": "Code Review & PR",
+      "name": "Bases de Données",
+      "percentage": 90
+    },
+    {
+      "name": "Cloud & DevOps",
+      "percentage": 85
+    },
+    {
+      "name": "Mobile & Responsive",
       "percentage": 94
     }
   ],
   "statistics": {
-    "commands": 50,
-    "developers": 5,
-    "files": 7,
-    "commits": 15,
-    "branches": 5,
-    "success": 100
+    "availability": "99.9%",
+    "features": 50,
+    "support": "24/7", 
+    "expertise": 5,
+    "latency": "100ms",
+    "security": "A+"
   },
   "timeline": [
     {
-      "phase": "Phase 1: Fondamentaux",
-      "description": "Installation et configuration de Git & GitHub"
+      "phase": "Phase 1: Analyse",
+      "description": "Étude des besoins et conception architecturale"
     },
     {
-      "phase": "Phase 2: Apprentissage",
-      "description": "Maîtrise des 50 commandes Git essentielles"
+      "phase": "Phase 2: Développement", 
+      "description": "Implémentation des modules principaux"
     },
     {
-      "phase": "Phase 3: Collaboration",
-      "description": "Travail en groupe avec branches individuelles"
+      "phase": "Phase 3: Sécurisation",
+      "description": "Intégration des protocoles de sécurité"
     },
     {
-      "phase": "Phase 4: Intégration",
-      "description": "Fusion des branches et résolution des conflits"
+      "phase": "Phase 4: Tests",
+      "description": "Validation et optimisation des performances" 
     },
     {
-      "phase": "Succès Final",
-      "description": "Projet complété avec excellence"
+      "phase": "Livraison",
+      "description": "Déploiement et formation des utilisateurs"
     }
   ],
   "contact": {
-    "email": "equipe@devteam.com",
-    "github": "github.com/devteam-groupe",
-    "discord": "DevTeam Community"
+    "email": "contact@patpatrouille.com",
+    "website": "www.patpatrouille.com", 
+    "phone": "+33 1 23 45 67 89"
   },
-  "colors": {
-    "primary": "#6366f1",
-    "secondary": "#8b5cf6",
-    "accent": "#ec4899",
-    "success": "#10b981",
-    "warning": "#f59e0b",
-    "error": "#ef4444",
-    "darkBg": "#0f172a",
-    "lightBg": "#f8fafc"
+  "theme": {
+    "current": "light",
+    "darkMode": true,
+    "autoSwitch": false
   },
-  "animations": {
-    "enabled": true,
-    "duration": "0.3s",
-    "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+  "features": {
+    "animations": true,
+    "notifications": true, 
+    "smoothScroll": true,
+    "formValidation": true
+  }
+};
+
+// ============================================
+// FONCTIONS D'ACCÈS À LA CONFIG
+// ============================================
+
+class ConfigManager {
+  static get(path, defaultValue = null) {
+    const keys = path.split('.');
+    let result = CONFIG;
+    
+    for (const key of keys) {
+      if (result && typeof result === 'object' && key in result) {
+        result = result[key];
+      } else {
+        return defaultValue;
+      }
+    }
+    
+    return result !== undefined ? result : defaultValue;
+  }
+  
+  static set(path, value) {
+    const keys = path.split('.');
+    let current = CONFIG;
+    
+    for (let i = 0; i < keys.length - 1; i++) {
+      const key = keys[i];
+      if (!(key in current) || typeof current[key] !== 'object') {
+        current[key] = {};
+      }
+      current = current[key];
+    }
+    
+    current[keys[keys.length - 1]] = value;
+    return true;
+  }
+  
+  static getAll() {
+    return JSON.parse(JSON.stringify(CONFIG));
   }
 }
 
+// ============================================
+// EXPORT ET INITIALISATION  
+// ============================================
+
+// Export pour Node.js
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = { CONFIG, ConfigManager };
+} 
+// Export pour le navigateur
+else {
+  window.APP_CONFIG = CONFIG;
+  window.ConfigManager = ConfigManager;
+  
+  // Initialisation automatique
+  document.addEventListener('DOMContentLoaded', function() {
+    console.log('Configuration PAT_PATROUILLE chargée:', CONFIG.portfolio.title, 'v' + CONFIG.portfolio.version);
+  });
+}
+
+// ============================================
+// UTILITAIRES
+// ============================================
+
+const ConfigUtils = {
+  // Vérifier si une fonctionnalité est activée
+  isFeatureEnabled(featurePath) {
+    return ConfigManager.get(`features.${featurePath}`, false);
+  },
+  
+  // Obtenir les membres de l'équipe
+  getTeamMembers() {
+    return ConfigManager.get('team.members', []);
+  },
+  
+  // Obtenir les phases du projet
+  getProjectPhases() {
+    return ConfigManager.get('project.phases', []);
+  },
+  
+  // Obtenir les compétences
+  getSkills() {
+    return ConfigManager.get('skills', []);
+  },
+  
+  // Obtenir la configuration du thème
+  getThemeConfig() {
+    return ConfigManager.get('theme', {});
+  },
+  
+  // Vérifier si le dark mode est activé
+  isDarkModeEnabled() {
+    return ConfigManager.get('theme.darkMode', false);
+  }
+};
