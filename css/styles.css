@@ -3,17 +3,20 @@
    ============================================ */
 
 :root {
-    --primary-color: #2563eb;
-    --secondary-color: #059669;
-    --accent-color: #dc2626;
-    --dark-bg: #111827;
-    --light-bg: #f9fafb;
-    --text-dark: #1f2937;
-    --text-light: #6b7280;
-    --border-color: #d1d5db;
-    --success-color: #059669;
-    --warning-color: #d97706;
-    --error-color: #dc2626;
+
+
+    --primary-color: #f16363;
+    --secondary-color: #5470b0;
+    --accent-color: #ec4899;
+    --dark-bg: #0f172a;
+    --light-bg: #f8fafc;
+    --text-dark: #1e293b;
+    --text-light: #64748b;
+    --border-color: #e2e8f0;
+    --success-color: #10b981;
+    --warning-color: #f59e0b;
+    --error-color: #ef4444;
+
     
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -563,14 +566,12 @@ section {
    ============================================ */
 
 .competences {
-<<<<<<< HEAD
-    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
-=======
+
     background: #e7e3d4; /* Alabaster */
     padding: 100px 20px;
     position: relative;
     overflow: hidden;
->>>>>>> origin/Dellia_Biloa
+
 }
 
 .competences::before {

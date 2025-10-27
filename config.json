@@ -4,16 +4,20 @@
 
 const CONFIG = {
   "portfolio": {
-    "title": "PAT_PATROUILLE - Système de Gestion",
-    "description": "Système avancé de gestion de patrouille et monitoring en temps réel",
-    "version": "1.2.0",
-    "author": "Équipe PAT_PATROUILLE",
-    "year": 2024
+
+
+    "title": "Portfolio Groupe - Git & GitHub Mastery",
+    "description": "Un projet collaboratif révolutionnaire présentant la maîtrise de Git et GitHub",
+    "version": "1.0.0",
+    "author": "Pat'patrouille",
+    "year": 2025
+
   },
   "team": {
     "members": [
       {
         "id": 1,
+
         "name": "Chef de Projet",
         "role": "Coordinateur Principal",
         "description": "Gestion des opérations et stratégie globale",
@@ -51,6 +55,7 @@ const CONFIG = {
         "description": "Contrôle qualité et tests de performance",
         "skills": ["Tests", "Performance", "Validation"],
         "avatar": "QA"
+
       }
     ]
   },
