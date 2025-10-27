@@ -1,8 +1,60 @@
 // ============================================
+// FONCTION UTILITAIRE DE SCROLL
+// ============================================
+
+function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+// ============================================
+// GESTION DU THÈME SOMBRE
+// ============================================
+
+class ThemeManager {
+    constructor() {
+        this.theme = localStorage.getItem('theme') || 'light';
+        this.themeToggle = document.getElementById('themeToggle');
+        this.themeIcon = document.getElementById('themeIcon');
+        this.init();
+    }
+
+    init() {
+        if (this.themeToggle && this.themeIcon) {
+            this.applyTheme(this.theme);
+            this.themeToggle.addEventListener('click', () => this.toggleTheme());
+        }
+    }
+
+    applyTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+        this.theme = theme;
+        this.updateIcon();
+    }
+
+    toggleTheme() {
+        const newTheme = this.theme === 'light' ? 'dark' : 'light';
+        this.applyTheme(newTheme);
+    }
+
+    updateIcon() {
+        if (this.themeIcon) {
+            this.themeIcon.textContent = this.theme === 'light' ? '🌙' : '☀️';
+        }
+    }
+}
+
+// ============================================
 // NAVIGATION ET SCROLL
 // ============================================
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialiser le gestionnaire de thème
+    const themeManager = new ThemeManager();
+
     const navLinks = document.querySelectorAll('.nav-link');
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
@@ -12,6 +64,22 @@ document.addEventListener('DOMContentLoaded', function() {
         hamburger.addEventListener('click', function() {
             navMenu.classList.toggle('active');
             hamburger.classList.toggle('active');
+            
+            // Styles pour le menu mobile
+            if (navMenu.classList.contains('active')) {
+                navMenu.style.display = 'flex';
+                navMenu.style.flexDirection = 'column';
+                navMenu.style.position = 'absolute';
+                navMenu.style.top = '100%';
+                navMenu.style.left = '0';
+                navMenu.style.width = '100%';
+                navMenu.style.background = 'rgba(255, 255, 255, 0.95)';
+                navMenu.style.backdropFilter = 'blur(10px)';
+                navMenu.style.padding = '20px';
+                navMenu.style.boxShadow = 'var(--shadow-md)';
+            } else {
+                navMenu.style.display = '';
+            }
         });
     }
 
@@ -25,7 +93,10 @@ document.addEventListener('DOMContentLoaded', function() {
             
             if (targetSection) {
                 // Fermer le menu mobile
-                if (navMenu) navMenu.classList.remove('active');
+                if (navMenu) {
+                    navMenu.classList.remove('active');
+                    navMenu.style.display = '';
+                }
                 if (hamburger) hamburger.classList.remove('active');
                 
                 // Scroll vers la section
@@ -110,7 +181,8 @@ const statsObserver = new IntersectionObserver(function(entries) {
         if (entry.isIntersecting) {
             const numbers = entry.target.querySelectorAll('.stat-number');
             numbers.forEach(number => {
-                const target = parseInt(number.textContent);
+                const text = number.textContent;
+                const target = parseInt(text);
                 if (!isNaN(target)) {
                     animateCounter(number, target);
                 }
@@ -234,17 +306,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // ============================================
-// FONCTION UTILITAIRE DE SCROLL
-// ============================================
-
-function scrollToSection(sectionId) {
-    const section = document.getElementById(sectionId);
-    if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
-    }
-}
-
-// ============================================
 // EFFETS DE HOVER AVANCÉS
 // ============================================
 
@@ -261,17 +322,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-
-// ============================================
-// DÉTECTION DU THÈME SOMBRE
-// ============================================
-
-function detectDarkMode() {
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    if (prefersDark) {
-        document.body.classList.add('dark-mode');
-    }
-}
 
 // ============================================
 // GESTION DU REDIMENSIONNEMENT
@@ -379,7 +429,5 @@ document.addEventListener('visibilitychange', function() {
 // ============================================
 
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('Portfolio chargé avec succès!');
-    detectDarkMode();
+    console.log('Portfolio chargé avec succès! 🚀');
 });
-
