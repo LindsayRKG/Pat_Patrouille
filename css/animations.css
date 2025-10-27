@@ -142,10 +142,10 @@
 
 @keyframes flip {
     0% {
-        transform: perspective(300px) rotateY(0);
+        transform: perspective(350px) rotateY(0);
     }
     100% {
-        transform: perspective(300px) rotateY(360deg);
+        transform: perspective(350px) rotateY(360deg);
     }
 }
 
