@@ -23,6 +23,104 @@
 }
 
 /* ============================================
+   DARK MODE STYLES
+   ============================================ */
+
+[data-theme="dark"] {
+    --primary-color: #3b82f6;
+    --secondary-color: #10b981;
+    --accent-color: #f59e0b;
+    --dark-bg: #0f172a;
+    --light-bg: #1e293b;
+    --text-dark: #f1f5f9;
+    --text-light: #cbd5e1;
+    --border-color: #334155;
+    --success-color: #10b981;
+    --warning-color: #f59e0b;
+    --error-color: #ef4444;
+}
+
+[data-theme="dark"] body {
+    background-color: var(--dark-bg);
+    color: var(--text-dark);
+}
+
+[data-theme="dark"] .navbar {
+    background: rgba(15, 23, 42, 0.95);
+    border-bottom: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .nav-link {
+    color: var(--text-dark);
+}
+
+[data-theme="dark"] .nav-link:hover {
+    color: var(--primary-color);
+}
+
+[data-theme="dark"] .projet-card,
+[data-theme="dark"] .skill-item,
+[data-theme="dark"] .timeline-content {
+    background: var(--light-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-dark);
+}
+
+[data-theme="dark"] .projet-card h3,
+[data-theme="dark"] .skill-header h3 {
+    color: var(--text-dark);
+}
+
+[data-theme="dark"] .projet-card p,
+[data-theme="dark"] .skill-item p {
+    color: var(--text-light);
+}
+
+[data-theme="dark"] .projet {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+}
+
+[data-theme="dark"] .competences {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+}
+
+[data-theme="dark"] .equipe {
+    background: var(--dark-bg);
+}
+
+[data-theme="dark"] .resultats {
+    background: var(--dark-bg);
+}
+
+[data-theme="dark"] .timeline {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+}
+
+[data-theme="dark"] .contact-form input,
+[data-theme="dark"] .contact-form textarea {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    color: var(--text-dark);
+}
+
+[data-theme="dark"] .contact-form input::placeholder,
+[data-theme="dark"] .contact-form textarea::placeholder {
+    color: var(--text-light);
+}
+
+[data-theme="dark"] .section-title,
+[data-theme="dark"] .section-subtitle {
+    color: var(--text-dark);
+}
+
+[data-theme="dark"] .logo-text {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ============================================
    RESET ET STYLES GLOBAUX
    ============================================ */
 
@@ -42,6 +140,7 @@ body {
     color: var(--text-dark);
     line-height: 1.6;
     overflow-x: hidden;
+    transition: var(--transition);
 }
 
 .container {
@@ -130,6 +229,30 @@ body {
     color: var(--primary-color);
 }
 
+.theme-toggle {
+    background: none;
+    border: 2px solid var(--border-color);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: var(--transition);
+    color: var(--text-dark);
+}
+
+.theme-toggle:hover {
+    background: var(--light-bg);
+    transform: rotate(20deg);
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -152,7 +275,7 @@ body {
 .hero {
     margin-top: 70px;
     min-height: calc(100vh - 70px);
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #1e3a8a 0%, #065f46 100%);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -288,7 +411,7 @@ section {
    ============================================ */
 
 .projet {
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
 }
 
 .projet-grid {
@@ -347,7 +470,7 @@ section {
 }
 
 .team-card {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #1e40af 0%, #047857 100%);
     padding: 40px 30px;
     border-radius: 15px;
     text-align: center;
@@ -440,7 +563,7 @@ section {
    ============================================ */
 
 .competences {
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
 }
 
 .skills-container {
@@ -541,7 +664,7 @@ section {
 }
 
 .timeline {
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
     padding: 50px 30px;
     border-radius: 15px;
 }
@@ -613,7 +736,7 @@ section {
    ============================================ */
 
 .contact {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #1e3a8a 0%, #065f46 100%);
     color: white;
 }
 
@@ -746,6 +869,36 @@ section {
 }
 
 /* ============================================
+   ANIMATIONS
+   ============================================ */
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes fillProgress {
+    from {
+        width: 0%;
+    }
+}
+
+/* ============================================
    RESPONSIVE DESIGN
    ============================================ */
 
@@ -836,4 +989,3 @@ section {
         gap: 15px;
     }
 }
-
