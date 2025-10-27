@@ -23,10 +23,15 @@
                 <li><a href="#resultats" class="nav-link">Résultats</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span id="themeIcon">🌙</span>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     </nav>
@@ -37,7 +42,7 @@
             <h1 class="hero-title">Maîtrise de Git & GitHub</h1>
             <p class="hero-subtitle">Un projet collaboratif révolutionnaire</p>
             <p class="hero-description">Découvrez comment notre équipe de 5 développeurs a maîtrisé les commandes Git et la collaboration en ligne</p>
-            <button class="cta-button" onclick="scrollToSection('projet')">Découvrir le Projet</button>
+            <button class="cta-button" onclick="scrollToSection('projet')">Voir Notre Travail</button>
         </div>
         <div class="hero-animation">
             <div class="floating-box">
@@ -100,8 +105,13 @@
 
             <div class="team-grid">
                 <div class="team-card">
-                    <div class="team-avatar">A</div>
-                    <h3>Ateba</h3>
+<<<<<<<<< Temporary merge branch 1
+                    <div class="team-avatar">Ke</div>
+                    <h3>KENGNE</h3>
+=========
+                    <div class="team-avatar">M</div>
+                    <h3>Marcus</h3>
+>>>>>>>>> Temporary merge branch 2
                     <p class="role">Développeur Full-Stack</p>
                     <p class="description">Expert en gestion de branches et résolution de conflits</p>
                     <div class="team-skills">
@@ -112,20 +122,31 @@
                 </div>
 
                 <div class="team-card">
-                    <div class="team-avatar">As</div>
-                    <h3>Asta</h3>
+<<<<<<<<< Temporary merge branch 1
+                    <div class="team-avatar">Ba</div>
+                    <h3>BABA</h3>
+=========
+                    <div class="team-avatar">R</div>
+                    <h3>Ruben</h3>
+>>>>>>>>> Temporary merge branch 2
                     <p class="role">Développeur Backend</p>
+
                     <p class="description">Spécialiste des commandes Git avancées</p>
                     <div class="team-skills">
-                        <span class="skill-tag">Rebase</span>
-                        <span class="skill-tag">Stash</span>
-                        <span class="skill-tag">Cherry-pick</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">GitHub</span>
                     </div>
                 </div>
 
                 <div class="team-card">
-                    <div class="team-avatar">S</div>
-                    <h3>Shine</h3>
+<<<<<<<<< Temporary merge branch 1
+                    <div class="team-avatar">No</div>
+                    <h3>NOUPIATCHE</h3>
+=========
+                    <div class="team-avatar">R</div>
+                    <h3>Rocky</h3>
+>>>>>>>>> Temporary merge branch 2
                     <p class="role">Développeur Frontend</p>
                     <p class="description">Maître de la collaboration en équipe</p>
                     <div class="team-skills">
@@ -136,8 +157,13 @@
                 </div>
 
                 <div class="team-card">
-                    <div class="team-avatar">L</div>
-                    <h3>Lili</h3>
+<<<<<<<<< Temporary merge branch 1
+                    <div class="team-avatar">As</div>
+                    <h3>ASSOUMOU</h3>
+=========
+                    <div class="team-avatar">Z</div>
+                    <h3>Zuma</h3>
+>>>>>>>>> Temporary merge branch 2
                     <p class="role">Développeur DevOps</p>
                     <p class="description">Gestionnaire de dépôts et workflows</p>
                     <div class="team-skills">
@@ -148,8 +174,25 @@
                 </div>
 
                 <div class="team-card">
-                    <div class="team-avatar">I</div>
-                    <h3>Idou</h3>
+<<<<<<<<< Temporary merge branch 1
+                    <div class="team-avatar">Bi</div>
+                    <h3>BILOA</h3>
+                    <p class="role">Développeur QA</p>
+                    <p class="description">Testeur et validateur de code</p>
+                    <div class="team-skills">
+                        <span class="skill-tag">Testing</span>
+                        <span class="skill-tag">Validation</span>
+                        <span class="skill-tag">Documentation</span>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-avatar">Ta</div>
+                    <h3>TAMBA</h3>
+=========
+                    <div class="team-avatar">S</div>
+                    <h3>Stella</h3>
+>>>>>>>>> Temporary merge branch 2
                     <p class="role">Développeur QA</p>
                     <p class="description">Testeur et validateur de code</p>
                     <div class="team-skills">
@@ -163,74 +206,92 @@
     </section>
 
     <!-- Compétences Section -->
-    <section id="competences" class="competences">
-        <div class="container">
-            <h2 class="section-title">Compétences Acquises</h2>
-            <p class="section-subtitle">Maîtrise complète de Git et GitHub</p>
+<section id="competences" class="competences">
+    <div class="container">
+        <h2 class="section-title">Compétences Acquises</h2>
+        <p class="section-subtitle">Maîtrise complète de Git et GitHub</p>
 
-            <div class="skills-container">
-                <div class="skill-item">
-                    <div class="skill-header">
+        <div class="skills-container mosaic-grid">
+            <div class="skill-item" data-progress="100">
+                <div class="skill-header">
+                    <div class="skill-title">
+                        <i class="fas fa-code-branch skill-icon"></i>
                         <h3>Git Basics</h3>
-                        <span class="skill-percentage">100%</span>
                     </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 100%;"></div>
-                    </div>
+                    <span class="skill-percentage">100%</span>
                 </div>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
 
-                <div class="skill-item">
-                    <div class="skill-header">
+            <div class="skill-item" data-progress="95">
+                <div class="skill-header">
+                    <div class="skill-title">
+                        <i class="fas fa-terminal skill-icon"></i>
                         <h3>Commandes Git Avancées</h3>
-                        <span class="skill-percentage">95%</span>
                     </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 95%;"></div>
-                    </div>
+                    <span class="skill-percentage">95%</span>
                 </div>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
 
-                <div class="skill-item">
-                    <div class="skill-header">
+            <div class="skill-item" data-progress="98">
+                <div class="skill-header">
+                    <div class="skill-title">
+                        <i class="fab fa-github skill-icon"></i>
                         <h3>Collaboration GitHub</h3>
-                        <span class="skill-percentage">98%</span>
                     </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 98%;"></div>
-                    </div>
+                    <span class="skill-percentage">98%</span>
                 </div>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
 
-                <div class="skill-item">
-                    <div class="skill-header">
+            <div class="skill-item" data-progress="92">
+                <div class="skill-header">
+                    <div class="skill-title">
+                        <i class="fas fa-exclamation-triangle skill-icon"></i>
                         <h3>Gestion des Conflits</h3>
-                        <span class="skill-percentage">92%</span>
                     </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 92%;"></div>
-                    </div>
+                    <span class="skill-percentage">92%</span>
                 </div>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
 
-                <div class="skill-item">
-                    <div class="skill-header">
+            <div class="skill-item" data-progress="96">
+                <div class="skill-header">
+                    <div class="skill-title">
+                        <i class="fas fa-project-diagram skill-icon"></i>
                         <h3>Workflow Git</h3>
-                        <span class="skill-percentage">96%</span>
                     </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 96%;"></div>
-                    </div>
+                    <span class="skill-percentage">96%</span>
                 </div>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
 
-                <div class="skill-item">
-                    <div class="skill-header">
+            <div class="skill-item" data-progress="94">
+                <div class="skill-header">
+                    <div class="skill-title">
+                        <i class="fas fa-code skill-icon"></i>
                         <h3>Code Review & PR</h3>
-                        <span class="skill-percentage">94%</span>
                     </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 94%;"></div>
-                    </div>
+                    <span class="skill-percentage">94%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Résultats Section -->
     <section id="resultats" class="resultats">
@@ -369,7 +430,9 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; 2025 Pat'Patrouille Portfolio. Créé par Marcus, Ruben, Rocky, Zuma, Stella.</p>
+
+            <p>&copy; 2025 DevTeam Portfolio. Créé par Ateba, Assoumou, Shine, Lili et Idou.</p>
+
             <div class="footer-links">
                 <a href="#accueil">Accueil</a>
                 <a href="#projet">Projet</a>
@@ -384,4 +447,7 @@
     <script src="js/interactions.js"></script>
 </body>
 </html>
-
+<!-- Marc Etienne -->
+<!-- Assoumou Aloo Harold Didier -->
+<!-- Aymerick Baba -->
+<!-- Lyndsay -->

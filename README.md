@@ -7,12 +7,12 @@ Un portfolio vitrine spectaculaire créé par une équipe de 5 développeurs pou
 
 ## 👥 Équipe
 
-- **KENGNE** - Développeur Full-Stack
-- **BABA** - Développeur Backend
-- **NOUPIATCHE** - Développeur Frontend
-- **ASSOUMOU** - Développeur DevOps
-- **BILOA** - Développeur QA
-- **TAMBA** - Développeur QA
+- **Ateba** - Développeur Full-Stack
+- **Asta** - Développeur Backend
+- **Shine** - Développeur Frontend
+- **Lili** - Développeur DevOps
+- **Idou** - Développeur QA
+
 ## 🎯 Objectifs du Projet
 
 Le projet Git original comportait plusieurs objectifs :
@@ -175,12 +175,13 @@ Ce portfolio est créé à titre éducatif par l'équipe DevTeam.
 
 ---
 
-**Créé avec ❤️ par Ateba, Asta, Shine, Lili et Idou**
+**Créé avec ❤️ par TCHOUNGA MARC, LEUNKEU PAULE, MBIANTCHA SONIA, FLORENTINE et SANDRA GAELLE**
 
 Version: 1.0.0
-Dernière mise à jour: 2025
+Dernière mise à jour: 26/10/2025
 
 =======
 # Pat_Patrouille
 Groupe 5
 >>>>>>> e3e6e35d515a7282f4df816fb79438aa7bbbe278
+- Marc Etienne
