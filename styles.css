@@ -3,8 +3,8 @@
    ============================================ */
 
 :root {
-    --primary-color: #f16363;
-    --secondary-color: #5470b0;
+    --primary-color: #6366f1;
+    --secondary-color: #8b5cf6;
     --accent-color: #ec4899;
     --dark-bg: #0f172a;
     --light-bg: #f8fafc;
@@ -20,104 +20,6 @@
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-}
-
-/* ============================================
-   DARK MODE STYLES
-   ============================================ */
-
-[data-theme="dark"] {
-    --primary-color: #3b82f6;
-    --secondary-color: #10b981;
-    --accent-color: #f59e0b;
-    --dark-bg: #0f172a;
-    --light-bg: #1e293b;
-    --text-dark: #f1f5f9;
-    --text-light: #cbd5e1;
-    --border-color: #334155;
-    --success-color: #10b981;
-    --warning-color: #f59e0b;
-    --error-color: #ef4444;
-}
-
-[data-theme="dark"] body {
-    background-color: var(--dark-bg);
-    color: var(--text-dark);
-}
-
-[data-theme="dark"] .navbar {
-    background: rgba(15, 23, 42, 0.95);
-    border-bottom: 1px solid var(--border-color);
-}
-
-[data-theme="dark"] .nav-link {
-    color: var(--text-dark);
-}
-
-[data-theme="dark"] .nav-link:hover {
-    color: var(--primary-color);
-}
-
-[data-theme="dark"] .projet-card,
-[data-theme="dark"] .skill-item,
-[data-theme="dark"] .timeline-content {
-    background: var(--light-bg);
-    border: 1px solid var(--border-color);
-    color: var(--text-dark);
-}
-
-[data-theme="dark"] .projet-card h3,
-[data-theme="dark"] .skill-header h3 {
-    color: var(--text-dark);
-}
-
-[data-theme="dark"] .projet-card p,
-[data-theme="dark"] .skill-item p {
-    color: var(--text-light);
-}
-
-[data-theme="dark"] .projet {
-    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-}
-
-[data-theme="dark"] .competences {
-    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-}
-
-[data-theme="dark"] .equipe {
-    background: var(--dark-bg);
-}
-
-[data-theme="dark"] .resultats {
-    background: var(--dark-bg);
-}
-
-[data-theme="dark"] .timeline {
-    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-}
-
-[data-theme="dark"] .contact-form input,
-[data-theme="dark"] .contact-form textarea {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid var(--border-color);
-    color: var(--text-dark);
-}
-
-[data-theme="dark"] .contact-form input::placeholder,
-[data-theme="dark"] .contact-form textarea::placeholder {
-    color: var(--text-light);
-}
-
-[data-theme="dark"] .section-title,
-[data-theme="dark"] .section-subtitle {
-    color: var(--text-dark);
-}
-
-[data-theme="dark"] .logo-text {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
 }
 
 /* ============================================
@@ -140,7 +42,6 @@ body {
     color: var(--text-dark);
     line-height: 1.6;
     overflow-x: hidden;
-    transition: var(--transition);
 }
 
 .container {
@@ -229,30 +130,6 @@ body {
     color: var(--primary-color);
 }
 
-.theme-toggle {
-    background: none;
-    border: 2px solid var(--border-color);
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    transition: var(--transition);
-    color: var(--text-dark);
-}
-
-.theme-toggle:hover {
-    background: var(--light-bg);
-    transform: rotate(20deg);
-}
-
-[data-theme="dark"] .theme-toggle:hover {
-    background: rgba(255, 255, 255, 0.1);
-}
-
 .hamburger {
     display: none;
     flex-direction: column;
@@ -275,7 +152,7 @@ body {
 .hero {
     margin-top: 70px;
     min-height: calc(100vh - 70px);
-    background: linear-gradient(135deg, #1e3a8a 0%, #065f46 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -411,7 +288,7 @@ section {
    ============================================ */
 
 .projet {
-    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
 .projet-grid {
@@ -470,7 +347,7 @@ section {
 }
 
 .team-card {
-    background: linear-gradient(135deg, #1e40af 0%, #047857 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     padding: 40px 30px;
     border-radius: 15px;
     text-align: center;
@@ -563,33 +440,31 @@ section {
    ============================================ */
 
 .competences {
-    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    background: linear-gradient(135deg, #e8ecef 0%, #d1d9e6 100%);
+    padding: 100px 20px;
 }
 
-.skills-container.mosaic-grid {
+.skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
-    position: relative;
-    z-index: 1;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
 }
 
 .skill-item {
-    background: #ffffff; /* Blanc pur pour contraste */
+    background: #ffffff;
     padding: 25px;
     border-radius: 16px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    border: 2px solid #d8c7b6; /* Accessible Beige */
-    transition: transform 0.4s ease-out, box-shadow 0.4s ease-out, border-color 0.4s ease-out;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
     position: relative;
+    overflow: hidden;
 }
 
 .skill-item:hover {
-    transform: translateY(-10px) scale(1.03);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-    border-color: #a8b5a2; /* Clary Sage */
-    background: #f9f9f9;
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+    background: linear-gradient(135deg, #f9fafb 0%, #e8ecef 100%);
 }
 
 .skill-header {
@@ -606,55 +481,52 @@ section {
 }
 
 .skill-icon {
-    font-size: 26px;
-    color: #a8b5a2; /* Clary Sage */
-    transition: transform 0.3s ease-out, color 0.3s ease-out;
+    font-size: 24px;
+    color: var(--primary-color);
+    transition: var(--transition);
 }
 
 .skill-item:hover .skill-icon {
-    color: #444631; /* Ripe Olive */
-    transform: scale(1.2) rotate(8deg);
+    color: var(--secondary-color);
+    transform: scale(1.2);
 }
 
 .skill-header h3 {
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 600;
-    color: #444631; /* Ripe Olive */
-    font-family: 'Segoe UI', sans-serif;
+    color: var(--text-dark);
+    margin: 0;
 }
 
 .skill-percentage {
-    font-size: 21px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     font-weight: 700;
-    color: #a8b5a2; /* Clary Sage */
-    transition: transform 0.3s ease-out, color 0.3s ease-out;
+    font-size: 20px;
+    transition: var(--transition);
 }
 
 .skill-item:hover .skill-percentage {
-    color: #444631; /* Ripe Olive */
     transform: scale(1.1);
 }
 
 .progress-bar {
     width: 100%;
-    height: 14px;
-    background: #d8c7b6; /* Accessible Beige */
-    border-radius: 20px;
+    height: 10px;
+    background: #e4e7eb;
+    border-radius: 12px;
     overflow: hidden;
     position: relative;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .progress-fill {
     height: 100%;
-    background: linear-gradient(90deg, #a8b5a2, #444631); /* Clary Sage to Ripe Olive */
-    border-radius: 20px;
-    width: 0;
-    transition: width 1s ease-out;
-}
-
-.skill-item.loaded .progress-fill {
-    width: var(--progress-width);
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: 12px;
+    position: relative;
+    transition: width 0.8s ease-out;
 }
 
 .progress-fill::after {
@@ -666,16 +538,16 @@ section {
     height: 100%;
     background: linear-gradient(
         45deg,
-        rgba(255, 255, 255, 0.25) 25%,
+        rgba(255, 255, 255, 0.2) 25%,
         transparent 25%,
         transparent 50%,
-        rgba(255, 255, 255, 0.25) 50%,
-        rgba(255, 255, 255, 0.25) 75%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0.2) 75%,
         transparent 75%,
         transparent
     );
-    background-size: 25px 25px;
-    animation: shimmer 2.5s linear infinite;
+    background-size: 20px 20px;
+    animation: shimmer 2s linear infinite;
 }
 
 /* ============================================
@@ -726,7 +598,7 @@ section {
 }
 
 .timeline {
-    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     padding: 50px 30px;
     border-radius: 15px;
 }
@@ -798,7 +670,7 @@ section {
    ============================================ */
 
 .contact {
-    background: linear-gradient(135deg, #1e3a8a 0%, #065f46 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
 }
 
@@ -931,36 +803,6 @@ section {
 }
 
 /* ============================================
-   ANIMATIONS
-   ============================================ */
-
-@keyframes slideInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
-}
-
-@keyframes fillProgress {
-    from {
-        width: 0%;
-    }
-}
-
-/* ============================================
    RESPONSIVE DESIGN
    ============================================ */
 
@@ -1051,3 +893,4 @@ section {
         gap: 15px;
     }
 }
+
