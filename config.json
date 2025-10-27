@@ -10,7 +10,7 @@
     "members": [
       {
         "id": 1,
-        "name": "Ateba",
+        "name": "KENGNE",
         "role": "Développeur Full-Stack",
         "description": "Expert en gestion de branches et résolution de conflits",
         "skills": ["Git", "GitHub", "Merge"],
@@ -18,7 +18,7 @@
       },
       {
         "id": 2,
-        "name": "Asta",
+        "name": "BABA",
         "role": "Développeur Backend",
         "description": "Spécialiste des commandes Git avancées",
         "skills": ["Rebase", "Stash", "Cherry-pick"],
@@ -26,7 +26,7 @@
       },
       {
         "id": 3,
-        "name": "Shine",
+        "name": "NOUPIATCHE",
         "role": "Développeur Frontend",
         "description": "Maître de la collaboration en équipe",
         "skills": ["Pull Request", "Code Review", "Collaboration"],
@@ -34,7 +34,7 @@
       },
       {
         "id": 4,
-        "name": "Lili",
+        "name": "ASSOUMOU",
         "role": "Développeur DevOps",
         "description": "Gestionnaire de dépôts et workflows",
         "skills": ["CI/CD", "Workflow", "Automation"],
@@ -42,7 +42,15 @@
       },
       {
         "id": 5,
-        "name": "Idou",
+        "name": "BILOA",
+        "role": "Développeur QA",
+        "description": "Testeur et validateur de code",
+        "skills": ["Testing", "Validation", "Documentation"],
+        "avatar": "I"
+      },
+      {
+        "id": 5,
+        "name": "TAMBA",
         "role": "Développeur QA",
         "description": "Testeur et validateur de code",
         "skills": ["Testing", "Validation", "Documentation"],

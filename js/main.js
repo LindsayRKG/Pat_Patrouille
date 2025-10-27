@@ -1,6 +1,6 @@
 // ============================================
 // NAVIGATION ET SCROLL
-// ============================================
+
 
 document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-link');

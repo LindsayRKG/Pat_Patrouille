@@ -7,12 +7,12 @@ Un portfolio vitrine spectaculaire créé par une équipe de 5 développeurs pou
 
 ## 👥 Équipe
 
-- **Ateba** - Développeur Full-Stack
-- **Asta** - Développeur Backend
-- **Shine** - Développeur Frontend
-- **Lili** - Développeur DevOps
-- **Idou** - Développeur QA
-
+- **KENGNE** - Développeur Full-Stack
+- **BABA** - Développeur Backend
+- **NOUPIATCHE** - Développeur Frontend
+- **ASSOUMOU** - Développeur DevOps
+- **BILOA** - Développeur QA
+- **TAMBA** - Développeur QA
 ## 🎯 Objectifs du Projet
 
 Le projet Git original comportait plusieurs objectifs :
