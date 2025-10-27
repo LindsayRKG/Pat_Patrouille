@@ -1,5 +1,3 @@
-// ============================================
-// NAVIGATION ET SCROLL
 
 
 document.addEventListener('DOMContentLoaded', function() {
