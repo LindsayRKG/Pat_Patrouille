@@ -428,4 +428,57 @@
 .fade-out-scale {
     animation: fadeOutScale 0.5s ease-out;
 }
+/* Animations spécifiques pour la section Compétences */
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) translateY(30px);
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1.1) translateY(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
 
+@keyframes revealProgress {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        width: var(--progress-width);
+    }
+}
+
+/* Réutilisation de l'animation shimmer existante */
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+/* Application des animations */
+.stagger-cascade > .skill-item {
+    animation: popIn 0.7s ease-out backwards;
+}
+
+.stagger-cascade > .skill-item:nth-child(1) { animation-delay: 0.1s; }
+.stagger-cascade > .skill-item:nth-child(2) { animation-delay: 0.2s; }
+.stagger-cascade > .skill-item:nth-child(3) { animation-delay: 0.3s; }
+.stagger-cascade > .skill-item:nth-child(4) { animation-delay: 0.4s; }
+.stagger-cascade > .skill-item:nth-child(5) { animation-delay: 0.5s; }
+.stagger-cascade > .skill-item:nth-child(6) { animation-delay: 0.6s; }
+
+.skill-item.loaded .progress-fill {
+    animation: revealProgress 1.2s ease-out forwards;
+}
