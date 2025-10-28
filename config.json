@@ -1,6 +1,4 @@
-// ============================================
-// CONFIGURATION - PAT_PATROUILLE
-// ============================================
+
 
 const CONFIG = {
   "portfolio": {
@@ -17,45 +15,43 @@ const CONFIG = {
     "members": [
       {
         "id": 1,
-
-        "name": "Chef de Projet",
-        "role": "Coordinateur Principal",
-        "description": "Gestion des opérations et stratégie globale",
-        "skills": ["Stratégie", "Gestion", "Coordination"],
-        "avatar": "CD"
+        "name": "Marcus",
+        "role": "Développeur Full-Stack",
+        "description": "Expert en gestion de branches et résolution de conflits",
+        "skills": ["Git", "GitHub", "Merge"],
+        "avatar": "M"
       },
       {
         "id": 2,
-        "name": "Expert Sécurité", 
-        "role": "Dev Cybersécurité",
-        "description": "Sécurisation des données et infrastructures",
-        "skills": ["Sécurité", "Cryptographie", "Audit"],
-        "avatar": "DS"
+        "name": "Ruben",
+        "role": "Développeur Backend",
+        "description": "Spécialiste des commandes Git avancées",
+        "skills": ["Rebase", "Stash", "Cherry-pick"],
+        "avatar": "R"
       },
       {
         "id": 3,
-        "name": "Dev Frontend",
-        "role": "Interface Utilisateur",
-        "description": "Expérience utilisateur et design responsive",
-        "skills": ["UI/UX", "React", "Mobile"],
-        "avatar": "DF"
+        "name": "Rocky",
+        "role": "Développeur Frontend",
+        "description": "Maître de la collaboration en équipe",
+        "skills": ["Pull Request", "Code Review", "Collaboration"],
+        "avatar": "R"
       },
       {
         "id": 4,
-        "name": "Dev Backend",
-        "role": "Architecture Système", 
-        "description": "Infrastructure serveur et bases de données",
-        "skills": ["API", "Database", "Cloud"],
-        "avatar": "DB"
+        "name": "Zuma",
+        "role": "Développeur DevOps",
+        "description": "Gestionnaire de dépôts et workflows",
+        "skills": ["CI/CD", "Workflow", "Automation"],
+        "avatar": "Z"
       },
       {
         "id": 5,
-        "name": "Quality Assurance",
-        "role": "Tests & Validation",
-        "description": "Contrôle qualité et tests de performance",
-        "skills": ["Tests", "Performance", "Validation"],
-        "avatar": "QA"
-
+        "name": "Stella",
+        "role": "Développeur QA",
+        "description": "Testeur et validateur de code",
+        "skills": ["Testing", "Validation", "Documentation"],
+        "avatar": "S"
       }
     ]
   },

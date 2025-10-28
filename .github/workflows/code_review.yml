@@ -1,0 +1,62 @@
+name: Code Review and Notification
+
+on:
+  push:
+    branches:
+      - '**'  # Déclenche le workflow pour toutes les branches
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 2  # Récupère les deux derniers commits pour comparer les changements
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+        cache: 'pip'  # Met en cache les dépendances pip pour accélérer les exécutions futures
+
+    - name: Check for requirements.txt
+      run: |
+        if [ ! -f requirements.txt ]; then
+          echo "Erreur : requirements.txt n'existe pas dans le dépôt."
+          exit 1
+        fi
+
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+
+    - name: Check for analyze_and_notify.py
+      run: |
+        if [ ! -f analyze_and_notify.py ]; then
+          echo "Erreur : analyze_and_notify.py n'existe pas dans le dépôt."
+          exit 1
+        fi
+
+    - name: Run Code Review Script
+      env:
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
+      run: |
+        # Vérifie que les secrets nécessaires sont définis
+        if [ -z "$GEMINI_API_KEY" ] || [ -z "$GMAIL_APP_PASSWORD" ] || [ -z "$SENDER_EMAIL" ]; then
+          echo "Erreur : Une ou plusieurs variables secrètes (GEMINI_API_KEY, GMAIL_APP_PASSWORD, SENDER_EMAIL) ne sont pas définies."
+          exit 1
+        fi
+        
+        # Récupère l'email de l'auteur du dernier commit
+        COMMIT_AUTHOR_EMAIL=$(git log -1 --pretty=format:'%ae')
+        echo "Auteur du commit : $COMMIT_AUTHOR_EMAIL"
+        
+        # Liste les fichiers modifiés dans le dernier commit
+        CHANGED_FILES=$(git diff --name-only HEAD^ HEAD)
+        echo "Fichiers modifiés : $CHANGED_FILES"
+        
+        # Exécute le script Python
+        python analyze_and_notify.py "$COMMIT_AUTHOR_EMAIL" "$CHANGED_FILES"
