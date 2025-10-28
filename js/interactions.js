@@ -4,7 +4,7 @@
 
 // ============================================
 // SYSTÈME DE NOTIFICATION
-// ============================================
+
 
 class Notification {
     constructor(message, type = 'info', duration = 3000) {

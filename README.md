@@ -7,11 +7,11 @@ Un portfolio vitrine spectaculaire créé par une équipe de 5 développeurs pou
 
 ## 👥 Équipe
 
-- **TCHOUNGA MARC ETIENNE** - Développeur Full-Stack
-- **LEUNKEU PAULE ANDREE** - Développeur Backend
-- **MBIANTCHA SONIA** - Développeur Frontend
-- **NZEUNE FLORENTINE** - Développeur DevOps
-- **SANDRA GAELLE** - Développeur QA
+- **Ateba** - Développeur Full-Stack
+- **Asta** - Développeur Backend
+- **Shine** - Développeur Frontend
+- **Lili** - Développeur DevOps
+- **Idou** - Développeur QA
 
 ## 🎯 Objectifs du Projet
 
