@@ -1,4 +1,53 @@
 // ============================================
+// FONCTION UTILITAIRE DE SCROLL
+// ============================================
+
+function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+// ============================================
+// GESTION DU THÈME SOMBRE
+// ============================================
+
+class ThemeManager {
+    constructor() {
+        this.theme = localStorage.getItem('theme') || 'light';
+        this.themeToggle = document.getElementById('themeToggle');
+        this.themeIcon = document.getElementById('themeIcon');
+        this.init();
+    }
+
+    init() {
+        if (this.themeToggle && this.themeIcon) {
+            this.applyTheme(this.theme);
+            this.themeToggle.addEventListener('click', () => this.toggleTheme());
+        }
+    }
+
+    applyTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+        this.theme = theme;
+        this.updateIcon();
+    }
+
+    toggleTheme() {
+        const newTheme = this.theme === 'light' ? 'dark' : 'light';
+        this.applyTheme(newTheme);
+    }
+
+    updateIcon() {
+        if (this.themeIcon) {
+            this.themeIcon.textContent = this.theme === 'light' ? '🌙' : '☀️';
+        }
+    }
+}
+
+// ============================================
 // NAVIGATION ET SCROLL
 // ============================================
 
@@ -60,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Mettre à jour le lien actif lors du scrolll
+    // Mettre à jour le lien actif lors du scroll
     window.addEventListener('scroll', function() {
         let current = '';
         const sections = document.querySelectorAll('section');

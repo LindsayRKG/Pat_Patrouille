@@ -1,4 +1,6 @@
-
+/* ============================================
+   ANIMATIONS
+   ============================================ */
 
 @keyframes slideInLeft {
     from {
@@ -6,7 +8,7 @@
         transform: translateX(-50px);
     }
     to {
-        opacity: 2;
+        opacity: 1;
         transform: translateX(0);
     }
 }

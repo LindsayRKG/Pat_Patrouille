@@ -4,7 +4,7 @@
 User-agent: *
 Allow: /
 
-# Directives spécifiques 
+# Directives spécifiques
 Disallow: /admin/
 Disallow: /private/
 Disallow: /*.json$

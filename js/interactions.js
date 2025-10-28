@@ -4,7 +4,7 @@
 
 // ============================================
 // SYSTÈME DE NOTIFICATION
-
+// ============================================
 
 class Notification {
     constructor(message, type = 'info', duration = 3000) {
@@ -45,7 +45,7 @@ class Notification {
             'success': '#10b981',
             'error': '#ef4444',
             'warning': '#f59e0b',
-            'info': '#da3bf6ff'
+            'info': '#3b82f6'
         };
         return backgrounds[this.type] || backgrounds['info'];
     }
