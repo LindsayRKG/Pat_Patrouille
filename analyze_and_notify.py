@@ -116,8 +116,8 @@ review_prompt = generate_prompt(CHANGED_FILES)
 # 2. Obtenir la revue de l'IA
 html_review = get_ai_review(review_prompt)
 
-# 3. Déterminer le sujet de l'email
-# On pourrait utiliser une analyse plus fine, mais pour l'instant, un sujet générique suffit
+# 3. Déterminer le contenu de l'email
+# On pourrait utiliser une analyse plus fine, mais pour l'instant, un contenu générique suffit
 email_subject = "Revue de Code Automatisée - Push sur ai-projet-git"
 
 # 4. Envoyer l'email
