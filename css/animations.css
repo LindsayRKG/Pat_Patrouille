@@ -60,7 +60,7 @@
         transform: translateY(0px);
     }
     50% {
-        transform: translateY(-20px);
+        transform: translateY(-30px);
     }
 }
 
@@ -142,10 +142,10 @@
 
 @keyframes flip {
     0% {
-        transform: perspective(350px) rotateY(0);
+        transform: perspective(500px) rotateY(0);
     }
     100% {
-        transform: perspective(350px) rotateY(360deg);
+        transform: perspective(500px) rotateY(360deg);
     }
 }
 
