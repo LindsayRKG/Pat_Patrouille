@@ -122,7 +122,7 @@ Le portfolio est entièrement responsive avec des breakpoints pour :
 
 ### Gestionnaires Principaux
 - **ThemeManager** - Gestion du thème clair/sombre
-- **EventManager** - Système d'événements personnalisés
+- **EventManager** - Système d'événement personnalisés
 - **SmoothScroller** - Scroll fluide
 - **FormValidator** - Validation de formulaire
 - **CacheManager** - Gestion du cache local
