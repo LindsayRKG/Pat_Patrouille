@@ -325,7 +325,7 @@ body {
 }
 
 .cta-button {
-    background: gold;
+    background: white;
     color: var(--primary-color);
     border: none;
     padding: 15px 40px;
