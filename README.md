@@ -131,7 +131,7 @@ Le portfolio est entièrement responsive avec des breakpoints pour :
 - **Modal** - Fenêtres modales
 
 ### Animations
-- Animations de chargements
+- Animations de chargement
 - Animations au scroll
 - Compteurs animés
 - Barres de progressions
