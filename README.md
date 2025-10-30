@@ -116,7 +116,7 @@ Le portfolio est entièrement responsive avec des breakpoints pour :
 - **7+** Fichiers dans le dépôt
 - **15+** Commits par chaque membre
 - **5** Branches créées et fusionnées
-- **100%** Réussite du projet
+- **100%** Réussite du projet parfait
 
 ## 🔧 Fonctionnalités JavaScript
 
