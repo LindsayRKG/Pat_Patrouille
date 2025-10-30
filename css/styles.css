@@ -906,7 +906,7 @@ section {
 }
 
 .submit-btn {
-    background: white;
+    background: black;
     color: var(--primary-color);
     border: none;
     padding: 15px 40px;
