@@ -158,7 +158,7 @@ Ce projet démontre :
 - Maîtrise de Git et GitHub
 - Collaboration efficace en équipe (groupe5)
 - Gestion des conflits de fusion
-- Bonnes pratiques de développement
+- Bonnes pratique de développement
 - Création d'une interface moderne
 - Optimisation des performances
 
