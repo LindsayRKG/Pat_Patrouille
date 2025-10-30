@@ -354,22 +354,17 @@
 }
 
 /* ============================================
-   LOADING ANIMATION 
+   LOADING ANIMATIONS
    ============================================ */
+
 @keyframes spin {
-  to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
-
-.loader {
-  width: 40px;
-  height: 40px;
-  border: 4px solid #ccc;
-  border-top-color: #00bcd4;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-  margin: 20px auto;
-}
-
 
 .spinner {
     border: 4px solid rgba(99, 102, 241, 0.1);
@@ -379,19 +374,26 @@
     height: 40px;
     animation: spin 1s linear infinite;
 }
+
 /* ============================================
-   TRANSITIONS (simple & efficace)
+   TRANSITION UTILITIES
    ============================================ */
-[class^="transition-"] {
-  transition-property: all;
-  transition-timing-function: ease-out;
+
+.transition-fast {
+    transition: all 0.15s ease-out;
 }
 
-.transition-fast   { transition-duration: 0.15s; }
-.transition-normal { transition-duration: 0.3s; }
-.transition-slow   { transition-duration: 0.6s; }
-.transition-slower { transition-duration: 1s; }
+.transition-normal {
+    transition: all 0.3s ease-out;
+}
 
+.transition-slow {
+    transition: all 0.6s ease-out;
+}
+
+.transition-slower {
+    transition: all 1s ease-out;
+}
 
 /* ============================================
    VISIBILITY ANIMATIONS
