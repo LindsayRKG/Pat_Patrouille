@@ -175,7 +175,7 @@ Ce portfolio est créé à titre éducatif par l'équipe patpatrouille.
 
 ---
 
-**Créé avec ❤️ par Ateba, Asta, Shine, Lili et Idou**
+**Créé avec ❤️ par ly, baba, didier, dellia et ravel**
 
 Version: 1.0.0
 Dernière mise à jour: 2025
