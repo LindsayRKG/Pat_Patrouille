@@ -52,65 +52,35 @@ class Notification {
 }
 
 // ============================================
-// GESTIONNAIRE DE THÈME (LIGHT / DARK)
+// GESTIONNAIRE DE THÈME
 // ============================================
 
 class ThemeManager {
     constructor() {
-        // Récupère le thème sauvegardé ou par défaut "light"
         this.theme = localStorage.getItem('theme') || 'light';
-        this.toggleButton = null;
         this.init();
     }
 
-    // Initialisation du gestionnaire
     init() {
         this.applyTheme(this.theme);
         this.createThemeToggle();
     }
 
-    // Applique le thème au document
     applyTheme(theme) {
         document.documentElement.setAttribute('data-theme', theme);
         localStorage.setItem('theme', theme);
         this.theme = theme;
-
-        // Met à jour l’icône du bouton si existant
-        if (this.toggleButton) {
-            this.toggleButton.innerHTML = theme === 'light' ? '🌙' : '☀️';
-            this.toggleButton.title = theme === 'light' ? 'Activer le mode sombre' : 'Activer le mode clair';
-        }
     }
 
-    // Bascule entre clair et sombre
     toggle() {
         const newTheme = this.theme === 'light' ? 'dark' : 'light';
         this.applyTheme(newTheme);
     }
 
-    // Crée dynamiquement le bouton de changement de thème
     createThemeToggle() {
-        this.toggleButton = document.createElement('button');
-        this.toggleButton.className = 'theme-toggle';
-        this.toggleButton.innerHTML = this.theme === 'light' ? '🌙' : '☀️';
-        this.toggleButton.title = this.theme === 'light' ? 'Activer le mode sombre' : 'Activer le mode clair';
-
-        // Ajoute l’événement de clic
-        this.toggleButton.addEventListener('click', () => this.toggle());
-
-        // Ajoute le bouton dans le DOM (en haut à droite)
-        document.body.appendChild(this.toggleButton);
+        // Peut être implémenté si nécessaire
     }
 }
-
-// ============================================
-// Initialisation du gestionnaire au chargement
-// ============================================
-
-document.addEventListener('DOMContentLoaded', () => {
-    new ThemeManager();
-});
-
 
 // ============================================
 // GESTIONNAIRE D'ÉVÉNEMENTS PERSONNALISÉS
