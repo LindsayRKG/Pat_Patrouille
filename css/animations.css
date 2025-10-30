@@ -379,26 +379,19 @@
     height: 40px;
     animation: spin 1s linear infinite;
 }
-
 /* ============================================
-   TRANSITION UTILITIES
+   TRANSITIONS (simple & efficace)
    ============================================ */
-
-.transition-fast {
-    transition: all 0.15s ease-out;
+[class^="transition-"] {
+  transition-property: all;
+  transition-timing-function: ease-out;
 }
 
-.transition-normal {
-    transition: all 0.3s ease-out;
-}
+.transition-fast   { transition-duration: 0.15s; }
+.transition-normal { transition-duration: 0.3s; }
+.transition-slow   { transition-duration: 0.6s; }
+.transition-slower { transition-duration: 1s; }
 
-.transition-slow {
-    transition: all 0.6s ease-out;
-}
-
-.transition-slower {
-    transition: all 1s ease-out;
-}
 
 /* ============================================
    VISIBILITY ANIMATIONS
