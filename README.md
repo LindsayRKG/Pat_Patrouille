@@ -171,7 +171,7 @@ Pour plus d'informations sur le projet original ou le portfolio :
 
 ## 📄 Licence
 
-Ce portfolio est créé à titre éducatif par l'équipe DevTeam.
+Ce portfolio est créé à titre éducatif par l'équipe patpatrouille.
 
 ---
 
