@@ -114,7 +114,7 @@ Le portfolio est entièrement responsive avec des breakpoints pour :
 - **50+** Commandes Git maîtrisées
 - **5** Développeurs collaborateurs
 - **7+** Fichiers dans le dépôt
-- **15+** Commits par membre
+- **15+** Commits par chaque membre
 - **5** Branches créées et fusionnées
 - **100%** Réussite du projet
 
