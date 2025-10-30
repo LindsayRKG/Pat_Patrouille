@@ -354,7 +354,7 @@
 }
 
 /* ============================================
-   LOADING ANIMATION (simple & propre)
+   LOADING ANIMATION 
    ============================================ */
 @keyframes spin {
   to { transform: rotate(360deg); }
