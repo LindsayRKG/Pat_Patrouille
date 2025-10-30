@@ -147,7 +147,7 @@ Le portfolio est entièrement responsive avec des breakpoints pour :
 
 ## 📝 Notes Importantes
 
-- Le portfolio ne nécessite aucune base de données
+- La patpatrouille ne nécessite aucune base de données
 - Tous les fichiers sont statiques et peuvent être hébergés n'importe où
 - Les animations utilisent CSS3 et JavaScript vanilla
 - Le formulaire de contact affiche un message de succès (sans envoi réel)
